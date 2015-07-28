@@ -15,11 +15,14 @@
 #import "AppDelegate.h"
 
 #import "RCTRootView.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(__unused UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [BuddyBuildSDK setup];
+  
   NSURL *jsCodeLocation;
 
   /**
